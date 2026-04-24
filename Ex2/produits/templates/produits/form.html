@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+    <h1>Produit</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enregistrer</button>
+    </form>
+    <a href="{% url 'liste_produits' %}">Retour</a>
+</body>
+</html>
